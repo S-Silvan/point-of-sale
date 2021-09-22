@@ -1,27 +1,45 @@
-# Pos
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.0.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Point of Sale Application
+## Description
+Point of sale software is used by the retailers to conduct sales in person. It's sometimes a cash register, computer, or even a tablet where cashiers input products, tally the cost, and conduct the financial transaction.
+## Technologies used
+* Java 8
+* MySQL
+* Spring Boot
+* Spring Data
+* Maven
+* Log4J
+* JUnit
+* HTML
+* CSS
+* TypeScript
+* Angular
+* REST API
+* Docker 
+* Jenkins
+## Features
+* Admin can signin
+* Admin adds the product
+* Admin views all products
+* Admin delete the product
+* Admin maintain inventory
+* Admin manages the staff
+* Admin can generate pdf of inventory
+* Admin can generate pdf of staff
+* Staff can signin
+* Staff adds an order with order items
+* Staff adds the customer
+* Staff can view all the orders
+* Staff can view all customers
+* Staff can generate invoice of orders
+* Customer can signin
+* Customer can view all orders of him/her
+* Customer can view all products sold on that store
+* Customer can view their profile
+* Customer can download invoice of order as pdf
+## Usage
+* Clone the project using _git clone_ command
+* Open the frontend folder and run _ng build_ command
+* Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`
+* Open the backend folder, and import it in your _ide_ and run the application
+* Change the urls in the service layer of the frontend of both application
+* Change the urls in customer module backend in service layer for rest calls
