@@ -1,0 +1,37 @@
+<section>
+  <img
+    src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/Wireless/WLA/SEP/CatPage/Brand/redmi/redmiEarBuds3Pro/Launch/Go_Live/D28531759_WLA_Redmi_Earbuds_3_Pro_Go_Live_mob_hero_1242x450.jpg"
+    class="w-100"
+  />
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-3 col-md-2 col-sm-1" *ngFor="let product of products">
+        <div *ngIf="product.stock != 0">
+          <div class="img" style="height:200px">
+            <img
+              class="card-img-top mx-5"
+              src="{{ product.image }}"
+              alt="Image"
+              style="max-height:100%;width:auto"
+            />
+          </div>
+          <div class="card-body">
+            <h6 class="card-title">
+              {{
+                product.brand + ' ' + product.name + ' ' + product.category.name
+              }}
+            </h6>
+            <h4 class="text-danger">
+              ₹{{ product.mrp }}
+              <span class="h6 strike"
+                ><del>₹{{ product.mrp + 200 }}</del></span
+              >
+            </h4>
+            <p></p>
+            <a [routerLink]="['/product', product.id]">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

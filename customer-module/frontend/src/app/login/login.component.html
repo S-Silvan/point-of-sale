@@ -1,0 +1,44 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="mt-5 border mx-auto p-4" style="max-width:400px;">
+          <p
+            class="text-center text-warning font-weight-bold h2"
+            style="font-weight:800;letter-spacing:1px"
+            href="#"
+          >
+            Revature<span class="h6">.com</span>
+          </p>
+          <h6 class="text-center">User login</h6>
+          <p *ngIf="message != ''" class="bg-danger text-white text-center p-3">
+            {{ message }}
+          </p>
+          <form [formGroup]="credentials" (ngSubmit)="login(credentials.value)">
+            <div class="form-group mb-2">
+              <label>User ID</label>
+              <input
+                type="number"
+                formControlName="userId"
+                class="form-control"
+                placeholder="Phone number"
+              />
+            </div>
+            <div class="form-group mb-2">
+              <label>Password</label>
+              <input
+                type="number"
+                formControlName="password"
+                class="form-control"
+                placeholder="Password"
+              />
+            </div>
+            <div class="form-group">
+              <input type="submit" class="btn btn-primary" value="Login" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
